@@ -39,11 +39,11 @@ const HomeScreen = ({ match }) => {
         style={{ backgroundColor: "#F3F7FB" }}
       />
       <Box style={{ backgroundColor: "#ffffff" }}>
-        <hr></hr>
+        <hr />
         <h5
           style={{
             margin: "0 0 0 22px",
-            fontweight: "600",
+            fontWeight: "600",
             fontFamily: "Arial",
             fontSize: "22px",
             textTransform: "none",
@@ -53,7 +53,7 @@ const HomeScreen = ({ match }) => {
         >
           Latest Product
         </h5>
-        <hr></hr>
+        <hr />
       </Box>
       {loading ? (
         <Loader />
@@ -61,35 +61,38 @@ const HomeScreen = ({ match }) => {
         <Message variant="danger">{error}</Message>
       ) : (
         <>
-          {/* <Row>
-            {products.map((product) => (
-              <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                <Product product={product} />
-              </Col>
-            ))}
-          </Row> */}
+          {/* <div className="container-fluid">
+            <div className="row">
+              <div className="col-lg-3 col-sm-3">
+                {products.map((product) => (
+                  <Product key={product._id} product={product} />
+                ))}
+              </div>
+            </div>
+          </div> */}
 
           <Row
+            className="justify-content-center"
             style={{
-              marginLeft: "20px",
-              padding: "0 100px",
-
+              // marginLeft: "20px",
+              marginLeft: "0", // Adjusted marginLeft
+              padding: "0 20px", // Adjust padding for small screens
               boxSizing: "border-box",
+              width: "100%", // Set width to 100%
             }}
           >
             {products.map((product) => (
-              // <col key={product._id} style={{display:"inline-block",padding:"0px,1rem,0px 1rem"}}>
-              <Product product={product} />
-              // </col>
+              <Product key={product._id} product={product} />
             ))}
           </Row>
-          <hr></hr>
+
+          <hr />
           <Equipments
             timer={true}
             title="Medical Equipments"
-            style={{ backgroundColor: "#F3F7FB", padding: "0 100px" }}
+            style={{ backgroundColor: "#F3F7FB" }} // Adjust padding for small screens
           />
-          <hr></hr>
+          <hr />
           <Paginate
             pages={pages}
             page={page}
