@@ -1,0 +1,22 @@
+.custom-background {
+  box-shadow: 5px 10px 10px #0e95a361;
+}
+
+.customLink a:visited {
+  color: #fff !important ;
+}
+.customLink a:hover {
+  color: #0cf;
+}
+.customLink a:active {
+  color: #0cf;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgb(9 126 130);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(202 37 18);
+}
