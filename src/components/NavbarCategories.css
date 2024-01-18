@@ -2,6 +2,7 @@
   margin: 0 auto;
   padding: 0 16px;
 }
+
 .innerContainer {
   width: 100%;
   color: #fff;
@@ -11,11 +12,8 @@
 .innerMostContainer {
   list-style: none;
   display: flex;
-  display: -webkit-flex;
   align-items: stretch;
-  -webkit-align-items: stretch;
   justify-content: space-between;
-  -webkit-justify-content: space-between;
   flex-direction: row;
   height: 100%;
 }
@@ -35,6 +33,22 @@ li {
 
 a {
   color: rgb(28, 28, 28);
-
   font-weight: bolder;
+}
+
+.navLink {
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .innerContainer {
+    height: 60px;
+  }
+
+  .innerMostContainer {
+    flex-direction: column;
+  }
+  .navLink {
+    display: none;
+  }
 }

@@ -6,7 +6,7 @@ const NewsLetter = () => {
   return (
     <div className="newsletter-container">
       <h2>subscibe to our newsletter</h2>
-      <p>
+      <p className="pin">
         Get a free subscription to our health and fitness tip and stay tuned to
         our latest offers
       </p>

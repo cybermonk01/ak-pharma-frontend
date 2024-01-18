@@ -1,12 +1,12 @@
 .card {
   border-bottom: 1px solid #e4e4e4;
-  padding: 10px 15px;
+  padding: 5px 5px;
   width: 250px;
   height: 350px;
 }
 
 .outer-card {
-  padding: 2px;
+  padding: 15px;
   cursor: pointer;
   margin: 10px 0;
 }
@@ -61,7 +61,8 @@
 
 .immg {
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 40px;
   color: inherit;
   outline: 0;
   width: 150px;

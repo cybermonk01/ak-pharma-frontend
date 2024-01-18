@@ -38,37 +38,55 @@ const useStyles = makeStyles((theme) => ({
 
 const NavbarCategories = () => {
   return (
-    // <Box className={classes.component}>
+    // <Box className={classNamees.component}>
     <div className="superContainer">
-      <div class="container">
-        <div class="innerContainer">
-          <ul class="innerMostContainer">
+      <div className="container">
+        <div className="innerContainer">
+          <ul className="innerMostContainer">
             <li>
-              <a href="/product">AK Products</a>
+              <a className="navLink" href="/product">
+                AK Products
+              </a>
             </li>
             <li>
-              <a href="/product">Baby Care</a>
+              <a className="navLink" href="/product">
+                Baby Care
+              </a>
             </li>
             <li>
-              <a href="/product">Health Drinks &amp; Supplements</a>
+              <a className="navLink" href="/product">
+                Health Drinks &amp; Supplements
+              </a>
             </li>
             <li>
-              <a href="/product">Women Care</a>
+              <a className="navLink" href="/product">
+                Women Care
+              </a>
             </li>
             <li>
-              <a href="/product">Personal Care</a>
+              <a className="navLink" href="/product">
+                Personal Care
+              </a>
             </li>
             <li>
-              <a href="/product">Ayurveda</a>
+              <a className="navLink" href="/product">
+                Ayurveda
+              </a>
             </li>
             <li>
-              <a href="/product">Health Devices</a>
+              <a className="navLink" href="/product">
+                Health Devices
+              </a>
             </li>
             <li>
-              <a href="/product">Home Essentials</a>
+              <a className="navLink" href="/product">
+                Home Essentials
+              </a>
             </li>
             <li>
-              <a href="/product">Health Condition</a>
+              <a className="navLink" href="/product">
+                Health Condition
+              </a>
             </li>
           </ul>
         </div>

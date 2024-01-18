@@ -7,7 +7,7 @@ const FooterTop = () => {
       <div className="footer-logo">
         <img
           src="https://i.ibb.co/2g1LBpB/AK-PNG.png"
-          width="200px"
+          width="180px"
           alt="logo"
           className="footer-img"
         />
